@@ -1,0 +1,88 @@
+/* Simple CSS for University Blog */
+:root {
+    --primary-blue: #003366;
+    --secondary-green: #006400;
+    --accent-gold: #FFD700;
+    --light-bg: #f8f9fa;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: var(--light-bg);
+}
+
+/* Header */
+.hero-section {
+    background-color: var(--primary-blue);
+    color: white;
+    padding: 2rem 0;
+}
+
+/* Navigation */
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+    font-weight: 500;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: var(--accent-gold);
+}
+
+/* Cards */
+.card {
+    border: 1px solid #ddd;
+    margin-bottom: 1rem;
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: var(--primary-blue);
+    border-color: var(--primary-blue);
+}
+
+.btn-primary:hover {
+    background-color: var(--secondary-green);
+    border-color: var(--secondary-green);
+}
+
+.btn-outline-primary {
+    color: var(--primary-blue);
+    border-color: var(--primary-blue);
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--primary-blue);
+    border-color: var(--primary-blue);
+    color: white;
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-blue);
+    color: white;
+    padding: 2rem 0;
+    margin-top: 3rem;
+}
+
+/* Basic responsive design */
+@media (max-width: 768px) {
+    .display-4 {
+        font-size: 2rem;
+    }
+    
+    .hero-section {
+        padding: 1rem 0;
+    }
+}
